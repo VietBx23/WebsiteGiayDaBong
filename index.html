@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="shortcut icon" href="/images/logo_medium.webp">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>TThanhHungFutsal</title>
+
+
+</head>
+
+<body ng-app="myapp" ng-controller="myCtrl">
+    <div class="container col-sm-12">
+        <header>
+            <div class="bg-warning">
+                <div class="row text-center" ; style="background-color:#333;">
+                    <div class="col-sm-12">
+                        <a href="#" style="color: white;">
+                            <h4>Thanh Hùng Fustal - Giày Đá Bóng Chính Hãng</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light" class="row text-center">
+            <a class="navbar-brand" href="#"><img src="images/logo_medium.webp" alt=""
+                    style="height:40px; width:150px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">TRANG CHỦ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">TẤT CẢ SẢN PHẨM</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            GIÀY CỎ NHÂN TẠO
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">NIKE</a>
+                            <a class="dropdown-item" href="#">ADIDAS</a>
+                            <a class="dropdown-item" href="#">MIZUNO</a>
+                            <a class="dropdown-item" href="#">ASICS</a>
+                            <a class="dropdown-item" href="#">DESPORTE</a>
+                            <a class="dropdown-item" href="#">PUMA</a>
+                            <a class="dropdown-item" href="#">KAMITO</a>
+                            <div class="dropdown-divider"></div>
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            GIÀY FUSTAL
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">NIKE</a>
+                            <a class="dropdown-item" href="#">ADIDAS</a>
+                            <a class="dropdown-item" href="#">JOMA</a>
+                            <a class="dropdown-item" href="#">MIZUNO</a>
+                            <a class="dropdown-item" href="#">DESPORTE</a>
+                            <a class="dropdown-item" href="#">PUMA</a>
+                            <a class="dropdown-item" href="#">ASICS</a>
+                            <a class="dropdown-item" href="#">AUTHLETA</a>
+                            <a class="dropdown-item" href="#">KAMITO</a>
+                            <div class="dropdown-divider"></div>
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">GIÀY TRẺ EM</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            THƯƠNG HIỆU
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">NIKE</a>
+                            <a class="dropdown-item" href="#">ADIDAS</a>
+                            <a class="dropdown-item" href="#">PUMA</a>
+                            <a class="dropdown-item" href="#">MIZUNO</a>
+                            <a class="dropdown-item" href="#">JOMA</a>
+                            <a class="dropdown-item" href="#">AUTHLETA</a>
+                            <a class="dropdown-item" href="#">DESPORTE</a>
+                            <a class="dropdown-item" href="#">ASICS</a>
+                            <a class="dropdown-item" href="#">KAMITO</a>
+                            <div class="dropdown-divider"></div>
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOT SALE</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li> -->
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PHỤ KIỆN
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">PHỤ KIỆN ADIDAS</a>
+                            <a class="dropdown-item" href="#">PHỤ KIỆN ACTIVITAL</a>
+                            <a class="dropdown-item" href="#">PHỤ KIỆN JOMA</a>
+                            <a class="dropdown-item" href="#">GRANDSPORT</a>
+                            <a class="dropdown-item" href="#">STARBALM</a>
+                            <a class="dropdown-item" href="#">TRÁI BÓNG ĐỘNG LỰC</a>
+                            <a class="dropdown-item" href="#">TRÁI BÓNG GERUSTAR</a>
+                            <a class="dropdown-item" href="#">PHỤ KIỆN MIZUNO</a>
+                            <a class="dropdown-item" href="#">PHỤ KIỆN THANH HÙNG FUSTAL</a>
+                            <div class="dropdown-divider"></div>
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">TIN TỨC GIÀY</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">KHÁCH HÀNG</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">CỬA HÀNG</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            TUYỂN DỤNG
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">CỬA HÀNG TRƯỞNG</a>
+                            <a class="dropdown-item" href="#">NHÂN VIÊN BÁN</a>
+                            <div class="dropdown-divider"></div>
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <div class="input-group" style="width:20%;">
+                    <input type="text" class="form-control " style="width:20%;"
+                        aria-label="Text input with segmented dropdown button" data-toggle="dropdown" ng-model="search">
+                    <div class="input-group-append">
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" ng-repeat="p in products|filter:search"
+                                href="#!detail/{{p.id}}">{{p.name}}</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="text-right" href="#!cart"><img width="30px"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUuNE8JPigjevhQIXyJYxi4XybFzzDsZZeVjhp3Wj7kki6fXK-PTxx8DOEdsHDMDoEIaA&usqp=CAU"
+                    alt="">
+            </a>
+
+            <span>{{cart.length}}</span>
+
+        </nav>
+
+
+        <div class="container col-sm-12 d-flex justify-content-center">
+            <div class="row">
+                <div ng-view>
+                </div>
+            </div>
+
+        </div>
+        <div ng-controller="myctrl7">
+            <div class="container col-sm-12">
+                <div class="row ">
+                    <article class="col-sm-12">
+                        <div class="card border-light">
+                            <!-- <h4 style="text-align: center;">BỘ SƯU TẬP</h4> -->
+                            <div class="card-header col-sm-12 border-light">
+                                <div class="images_suTap" style="width: 100%; text-align: center;">
+                                    <a href="#" style="color: white;">
+                                        <img src="images/bosuutap.jpg" class="img-fluid" alt="New York">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body col-sm-12">
+                                <div class="container col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <div class="card border-light">
+                                                <div class="card-header col-sm-12 border-light">
+                                                    <h5>
+                                                        <a style="text-decoration: none; color: black;" href="#">CHÍNH
+                                                            SÁCH</a>
+                                                    </h5>
+                                                </div>
+                                                <div class="card-body" id="footer">
+                                                    <ul style="list-style: none;">
+                                                        <li>
+                                                            <a style="color: black; text-decoration:none; list-style: none; margin-top: 5px;"
+                                                                href="#">Chính Sách Bảo Hành</a>
+                                                        </li>
+                                                        <li>
+                                                            <a style="color: black; text-decoration:none; list-style: none;"
+                                                                href="#">Chính Sách Đổi Trả</a>
+                                                        </li>
+                                                        <li>
+                                                            <a style="color: black; text-decoration:none; list-style: none;"
+                                                                href="#">Chính Sách Giao Nhận Hàng</a>
+                                                        </li>
+                                                        <li>
+                                                            <a style="color: black; text-decoration:none; list-style: none;"
+                                                                href="#">Hướng Dẫn Sử Dụng Fundiin trả góp giày đá
+                                                                banh</a>
+                                                        </li>
+                                                        <li>
+                                                            <a style="color: black; text-decoration:none; list-style: none;"
+                                                                href="#">Hướng Dẫn Thanh Toán kỳ 2 & 3 cho Fundiin</a>
+                                                        </li>
+                                                        <li>
+                                                            <a style="color: black; text-decoration:none; list-style: none;"
+                                                                href="#">Câu Hỏi Thường Gặp Với Fundiin</a>
+                                                        </li>
+                                                    </ul>
+                                                    <img src="images/bocongthuong.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="card border-light">
+                                                <div class="card-header col-sm-12 border-light">
+                                                    <h5>
+                                                        <a style="text-decoration: none; color: black;" href="#">VỀ
+                                                            TF</a>
+                                                    </h5>
+                                                </div>
+                                                <div class="card-body border-light" id="footer">
+                                                    <ul style="list-style: none;">
+                                                        <li>
+                                                            <a style="color: black; text-decoration:none; list-style: none; margin-top: 5px;"
+                                                                href="#">Về Chúng Tôi</a>
+                                                        </li>
+                                                        <li>
+                                                            <a style="color: black; text-decoration:none; list-style: none;"
+                                                                href="#">Lĩnh Vực Kinh Doanh</a>
+                                                        </li>
+                                                        <li>
+                                                            <a style="color: black; text-decoration:none; list-style: none;"
+                                                                href="#">THF|: 27 Đường D52, P.12, Q.Bình Tân, TP.HCM |
+                                                                Hotline:0901 710 780 - 028 38429720</a>
+                                                        </li>
+                                                        <li>
+                                                            <a style="color: black; text-decoration:none; list-style: none;"
+                                                                href="#">THF||: 32A Thạch Thị Thanh, P.Tân Định, Quận 1,
+                                                                TP.HCM|
+                                                                Hotline: 0901 710 730</a>
+                                                        </li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 border-light">
+                                            <div class="card-header col-sm-12 border-light">
+                                                <h5>
+                                                    <a style="text-decoration: none; color: black;"
+                                                        href="#">FACEBOOK</a>
+                                                </h5>
+                                            </div>
+                                            <div class="card-body border-light">
+                                                <iframe
+                                                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthanhhungfutsal&tabs=timeline%2C%20events%2C%20messages&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                                    width="340" height="500" style="border:none;overflow:hidden"
+                                                    scrolling="no" frameborder="0" allowfullscreen="true"
+                                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-5 border-light">
+                                            <div class="container col-sm-10 border-light">
+                                                <div class="row border-light">
+                                                    <div class="card-header col-sm-12 border-light">
+                                                        <h5>
+                                                            <a style="text-decoration: none; color: black;"
+                                                                href="#">INSTARGRAM</a>
+                                                        </h5>
+                                                    </div>
+
+                                                    <div class="col-6 col-sm-6 col-md-4 Instargam"
+                                                        ng-repeat="t in Instargam">
+                                                        <div class="card care border-light">
+                                                            <img src="images/{{t.image}} "
+                                                                class="img-fluid bg-image hover-overlay hover-zoom hover-shadow ripple"
+                                                                alt="...">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <footer style="background-color: rgba(177, 171, 171, 0.801);">
+            <a href="#" style="color: black; text-decoration: none  ;">ThanhHungFutsal</a> |
+            <a href="#" style="color: black; text-decoration: none  ;">Giày Bóng Đá Chính Hãng</a> |
+            <a href="#" style="color: black; text-decoration: none  ;"> Mở Cửa Từ 9h-21h</a>
+            <p> &copy; Bản Quyền Thuộc Thanh HÙng FUSTAL</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("select.elements").change(function () {
+                var selectedCountry = $(this).children("option:selected").val();
+                // alert("You have selected the country - " + selectedCountry);
+                document.getElementById('results').innerHTML = `Giá Trị ${selectedCountry}`
+
+            });
+        });
+    </script>
+    <script>
+        // var indexCart = 0;
+        var app = angular.module("myapp", ["ngRoute"]);
+        app.controller("myCtrl", function ($scope, $rootScope, $routeParams, $http) {
+            $scope.addCart = function (p) {
+                if (typeof $rootScope.cart == 'undefined') {
+                    $rootScope.cart = [];
+                };
+                $scope.countCart = $rootScope.cart.length;
+                if ($rootScope.cart.filter(i => i.id == p.id).length == 0) {
+                    $rootScope.cart.push(p);
+                    $rootScope.cart[$scope.countCart].quantity = 1;
+                    $rootScope.cart[$scope.countCart].size = $scope.size;
+
+                }
+
+            }
+            $rootScope.sumMoney = 0;
+            if (typeof $rootScope.cart != 'undefined') {
+                for (var i = 0; i < $rootScope.cart.length; i++) {
+                    $rootScope.sumMoney = $rootScope.sumMoney + $rootScope.cart[i].quantity * $rootScope.cart[i].price;
+                }
+            }
+            $scope.addClick = function (index) {
+                $rootScope.cart[index].quantity = $rootScope.cart[index].quantity + 1;
+                if (typeof $rootScope.cart != 'undefined') {
+                    $rootScope.sumMoney = 0;
+                    for (var i = 0; i < $rootScope.cart.length; i++) {
+                        $rootScope.sumMoney = $rootScope.sumMoney + $rootScope.cart[i].quantity * $rootScope.cart[i].price;
+                    }
+                }
+
+            }
+            $scope.subClick = function (index) {
+                if ($rootScope.cart[index].quantity > 1) {
+                    $rootScope.cart[index].quantity = $rootScope.cart[index].quantity - 1;
+                }
+                if (typeof $rootScope.cart != 'undefined') {
+                    $rootScope.sumMoney = 0;
+                    for (var i = 0; i < $rootScope.cart.length; i++) {
+                        $rootScope.sumMoney = $rootScope.sumMoney + $rootScope.cart[i].quantity * $rootScope.cart[i].price;
+                    }
+                }
+            }
+            $scope.delProduct = function (index) {
+                $rootScope.cart.splice(index, 1);
+                if (typeof $rootScope.cart != 'undefined') {
+                    $rootScope.sumMoney = 0;
+                    for (var i = 0; i < $rootScope.cart.length; i++) {
+                        $rootScope.sumMoney = $rootScope.sumMoney + $rootScope.cart[i].quantity * $rootScope.cart[i].price;
+                    }
+                }
+            }
+            function showValue() {
+                var ele = elements.value;
+                document.getElementById('results').innerHTML = `Giá Trị ${ele}`
+            }
+            function ct() {
+                var v = document.getElementById("elements").value;
+                alert(v);
+            }
+
+
+            // $scope.sosanphamlap = 2;
+            // $scope.xemthemlap = "Xem thêm...";
+            // $scope.xemthemsplap = function () {
+            //     if ($scope.sosanphamlap == 2) {
+            //         $scope.sosanphamlap = $scope.products.length;
+            //         $scope.xemthemlap = "Thu lại";
+            //     } else {
+            //         $scope.sosanphamlap = 2;
+            //         $scope.xemthemlap = "Xem thêm...";
+            //     }
+            // }
+            $scope.sosanphamlap = 4;
+            $scope.xemthemlap = "Xem thêm...";
+            $scope.xemthemsplap = function () {
+                if ($scope.sosanphamlap == 4) {
+                    $scope.sosanphamlap = $scope.products.length;
+                    $scope.xemthemlap = "Thu lại";
+                } else {
+                    $scope.sosanphamlap = 4;
+                    $scope.xemthemlap = "Xem thêm...";
+                }
+            }
+
+
+
+            $scope.sapxep = true;
+            $scope.TitleSort = "Sắp Xếp Giá Tăng Dần.";
+            $scope.sapxepsp = function () {
+                if ($scope.sapxep == true) {
+                    $scope.sapxep = false;
+                    $scope.TitleSort = "Sắp Xếp Giá Giảm Dần";
+
+                } else {
+                    $scope.sapxep = true;
+                    $scope.TitleSort = "Sắp Xếp Giá Tăng Dần.";
+
+                }
+            }
+
+
+
+            $scope.giatri;
+            $scope.tang = function () {
+                this.giatri = false;
+            }
+            $scope.giam = function () {
+                this.giatri = false;
+            }
+            $scope.sapxep = function () {
+                $scope.tang = "orderBy: '+price'";
+            }
+
+            $scope.tim;
+            $scope.timkiem = function () {
+                this.tim = $scope.search;
+            }
+            $scope.products = [];
+            $http.get('json/listProduct.json').then(function (reponse) {
+                $scope.products = reponse.data;
+                $scope.index = $scope.products.findIndex(record => record.id == $routeParams.url)
+            })
+
+
+
+
+            $scope.care = [
+                {
+                    image: "giayCoNhanTao.jpg",
+                },
+                {
+                    image: "giayFustal.jpg",
+                },
+                {
+                    image: "phuKienChinhHang.jpg",
+                },
+                {
+                    image: "giayDaBongGiamGia.jpg",
+                }
+            ];
+            $scope.experience = [
+                {
+                    image: "trainghiem.webp",
+                    name: "Tư vấn bán hàng chuyên nghiệp."
+                },
+                {
+                    image: "trainghiem2.jpg",
+                    name: "Hỗ trợ đo chân bằng thiết bị chuyên dụng."
+                },
+                {
+                    image: "trainghiem3.jpg",
+                    name: "Quà tặng khi mua giày(Vớ, Balo, Túi Rút)."
+                },
+                {
+                    image: "trainghiem4.webp",
+                    name: "Thanh toán linh hoạt(Tiền mặt, Chuyển Khoản)."
+                },
+
+                {
+                    image: "trainghiem5.webp",
+                    name: "Hỗ trợ trả góp 0% lãi xuất qua Fundiin(Thủ tục đơn giãn)."
+                },
+                {
+                    image: "trainghiem6.webp",
+                    name: "Dịch vụ giao hàng nhanh chóng(Grab & GHTK)."
+                }
+            ];
+            $scope.trademark = [
+                {
+                    image: "thuonghieu1.webp",
+                    name: "Giày Đá Banh Nike"
+                },
+                {
+                    image: "thuonghieu2.webp",
+                    name: "Giày Đá Banh Adidas"
+                },
+                {
+                    image: "thuonghieu3.webp",
+                    name: "Giày Đá Banh Mizuno"
+                },
+                {
+                    image: "thuonghieu4.webp",
+                    name: "Giày Đá Banh Puma"
+                },
+                {
+                    image: "thuonghieu5.webp",
+                    name: "Giày Đá Banh Joma"
+                },
+                {
+                    image: "thuonghieu6.jpg",
+                    name: "Giày Đá Banh Desporte"
+                },
+                {
+                    image: "thuonghieu7.jpg",
+                    name: "Giày Đá Banh Kamito"
+                },
+                {
+                    image: "thuonghieu8.jpg",
+                    name: "Giày Đá Banh Authleta"
+                },
+                {
+                    image: "thuonghieu9.jpg",
+                    name: "Giày Đá Banh Activital"
+                },
+                {
+                    image: "thuonghieu10.webp",
+                    name: "Đồng Phục - Phụ Kiện Grand Sport"
+                },
+                {
+                    image: "thuonghieu11.jpg",
+                    name: "Chai Xịt - Phụ Kiện StarBalm"
+                },
+                {
+                    image: "thuonghieu12.jpg",
+                    name: "Trái Bóng Động Lực"
+                },
+
+            ];
+            $scope.news = [
+                {
+                    image: "tt1.jpg",
+                    title: "Khám phá adidas Predator Precision Archive - Khởi đầu năm mới cùng một chút hoài niệm từ quá khứ",
+                    name: "Khởi đầu năm mới cùng một chút hoài niệm từ quá khứ, adidas vừa qua..."
+                },
+                {
+                    image: "tt2.webp",
+                    title: "Khám phá adidas Predator Precision Archive - Khởi đầu năm mới cùng một chút hoài niệm từ quá khứ",
+                    name: "Khởi đầu năm mới cùng một chút hoài niệm từ quá khứ, adidas vừa qua..."
+                },
+                {
+                    image: "tt3.webp",
+                    title: "Khám phá adidas Predator Precision Archive - Khởi đầu năm mới cùng một chút hoài niệm từ quá khứ",
+                    name: "Khởi đầu năm mới cùng một chút hoài niệm từ quá khứ, adidas vừa qua..."
+                },
+                {
+                    image: "tt4.webp",
+                    title: "Khám phá adidas Predator Precision Archive - Khởi đầu năm mới cùng một chút hoài niệm từ quá khứ",
+                    name: "Khởi đầu năm mới cùng một chút hoài niệm từ quá khứ, adidas vừa qua..."
+                },
+            ];
+            $scope.index = $routeParams.url;
+        });
+
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/detail/:url", {
+                    templateUrl: "productInfor.html?" + Math.random(),
+                    controller: "myCtrl"
+                })
+                .when("/cart", {
+                    templateUrl: "cartProduct.html?" + Math.random(),
+                    controller: "myCtrl"
+                })
+                .otherwise({
+                    templateUrl: "listProduct.html",
+                    controller: "myCtrl",
+
+                })
+
+        });
+        app.controller("myctrl7", function ($scope) {
+            $scope.Instargam = [
+                {
+                    image: "giayCoNhanTao.jpg",
+                },
+                {
+                    image: "giayFustal.jpg",
+                },
+                {
+                    image: "phuKienChinhHang.jpg",
+                },
+                {
+                    image: "giayDaBongGiamGia.jpg",
+                },
+                {
+                    image: "giayCoNhanTao.jpg",
+                },
+                {
+                    image: "giayFustal.jpg",
+                },
+                {
+                    image: "phuKienChinhHang.jpg",
+                },
+                {
+                    image: "giayDaBongGiamGia.jpg",
+                },
+                {
+                    image: "giayDaBongGiamGia.jpg",
+                },
+            ]
+
+
+            var value = element(by.binding('example.value'));
+            var valid = element(by.binding('myForm.input.$valid'));
+            var input = element(by.model('example.value'));
+
+            it('should initialize to model', function () {
+                expect(value.getText()).toContain('12');
+                expect(valid.getText()).toContain('true');
+            });
+
+            it('should be invalid if empty', function () {
+                input.clear();
+                input.sendKeys('');
+                expect(value.getText()).toEqual('value =');
+                expect(valid.getText()).toContain('false');
+            });
+
+            it('should be invalid if over max', function () {
+                input.clear();
+                input.sendKeys('123');
+                expect(value.getText()).toEqual('value =');
+                expect(valid.getText()).toContain('false');
+            });
+        });
+
+        app.controller("myctrl7", function ($scope) {
+            $scope.Instargam = [
+                {
+                    image: "giayCoNhanTao.jpg",
+                },
+                {
+                    image: "giayFustal.jpg",
+                },
+                {
+                    image: "phuKienChinhHang.jpg",
+                },
+                {
+                    image: "giayDaBongGiamGia.jpg",
+                },
+                {
+                    image: "giayCoNhanTao.jpg",
+                },
+                {
+                    image: "giayFustal.jpg",
+                },
+                {
+                    image: "phuKienChinhHang.jpg",
+                },
+                {
+                    image: "giayDaBongGiamGia.jpg",
+                },
+                {
+                    image: "giayDaBongGiamGia.jpg",
+                },
+            ]
+        });
+
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    document.getElementById('navbar_top').classList.add('fixed-top');
+                    // add padding top to show content behind navbar
+                    navbar_height = document.querySelector('.navbar').offsetHeight;
+                    document.body.style.paddingTop = navbar_height + 'px';
+                } else {
+                    document.getElementById('navbar_top').classList.remove('fixed-top');
+                    // remove padding top from body
+                    document.body.style.paddingTop = '0';
+                }
+            });
+        }); 
+    </script>
+
+</body>
+
+</html>
